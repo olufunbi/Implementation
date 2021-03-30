@@ -15,11 +15,15 @@ int i,j;
   
 //Use one for loop with i and j variables to loop through both arrays at the same time
 for(i =0, j=len-1; j<=len-1 && i<a.length; i++, j--){
+    
+  // Convert the Integer values to strings
   String s1 = Integer.toString(a[i]); 
   String s2 = Integer.toString(b[j]);
   
+  // Concatenate both strings
   String s = s1 +s2;
   
+  // Convert the string into an integer so it can be compared with k
   int x = Integer.parseInt(s);
   
   if(x<k){
